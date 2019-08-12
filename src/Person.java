@@ -38,9 +38,6 @@ public class Person {
     public void setPesel(String pesel) {
         Pesel = pesel;
     }
-    public Person() {
-    }
-
     @Override
     public String toString() {
         return "Dane osoby to " +
