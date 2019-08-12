@@ -16,12 +16,8 @@ public class PersonTest {
         }catch (NameUndefinedException e) {
             System.out.println(e.getMessage());
         }
-        try{
             System.out.println("Wprowadz pesel osoby: ");
             person.setPesel(input.nextLine());
-        }catch (NameUndefinedException e) {
-            System.out.println(e.getMessage());
-        }
         try {
             System.out.println("Wprowadz wiek osoby: ");
             person.setAge(input.nextInt());

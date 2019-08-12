@@ -8,7 +8,7 @@ public class Person {
     public String getFirstName() {
         return firstName;
     }
-    public void setFirstName(String firstName) {
+    public void setFirstName(String firstName) throws NameUndefinedException {
         if (firstName.length()<=2){
             throw new NameUndefinedException();
         }
@@ -17,7 +17,7 @@ public class Person {
     public String getLastName() {
         return lastName;
     }
-    public void setLastName(String lastName) {
+    public void setLastName(String lastName) throws NameUndefinedException {
         if (lastName.length()<=2){
             throw new NameUndefinedException();
         }
@@ -26,7 +26,7 @@ public class Person {
     public int getAge() {
         return age;
     }
-    public void setAge(int age) {
+    public void setAge(int age) throws IncorrectAgeException {
         if(age<1) {
             throw new IncorrectAgeException(AGE_LIMIT);
         }
