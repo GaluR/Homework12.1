@@ -3,6 +3,7 @@ public class Person {
     private String lastName;
     private int age;
     private String Pesel;
+    public static final int AGE_LIMIT = 1;
 
     public String getFirstName() {
         return firstName;
@@ -47,16 +48,4 @@ public class Person {
                 ", wiek: " + age +
                 ", Pesel: " + Pesel;
     }
-
-    public void toShortNames(){
-        if(getLastName()==null || getFirstName() == null || getLastName().length()<3 || getFirstName().length()<3){
-            throw new NameUndefinedException();
-        }
-    }
-    public void tooYoung(){
-        if(age<1){
-            throw new IncorrectAgeException();
-        }
-    }
-
 }
