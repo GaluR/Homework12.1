@@ -1,5 +1,5 @@
-public class IncorrectAgeException extends RuntimeException {
-    public IncorrectAgeException() {
-        super("Podałeś zbyt mały wiek. Musi być >=1");
+public class IncorrectAgeException extends Exception {
+    public IncorrectAgeException(int value) {
+        super("Podałeś zbyt mały wiek. Musi być większa od " + value);
     }
 }
